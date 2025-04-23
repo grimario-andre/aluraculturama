@@ -1,0 +1,136 @@
+.categorias__lista,
+.destaques,
+.menu {
+    display: flex;
+}
+
+.destaques,
+.menu {
+    align-items: center;
+}
+
+.menu {
+    /* border: 1px solid red; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 0 30px;
+}
+
+.menu__item {
+    /* border: 1px solid red; */
+}
+
+.categorias__lista {
+    flex-direction: column;
+    row-gap: 0.5em;
+}
+
+.destaques {
+    /* justify-content: space-between; */
+    column-gap: 10px;
+}
+
+.destaques__barra {
+    flex-grow: 1;
+    white-space: nowrap;
+}
+
+.eventos__lista {
+    display: flex;
+    flex-direction: column;
+    column-gap: 1.5em;
+    row-gap: 1em;
+}
+
+.eventos__item {
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+.eventos__botao {
+    display: flex;
+    justify-content: center;
+}
+
+.agenda__lista {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+.agenda__item {
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+.agenda__botao {
+    display: flex;
+    justify-content: center;
+}
+
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rodape__logo{
+    /* align-content: end; */
+    align-self: end;
+}
+
+@media screen and (min-width: 768px) {
+    .menu {
+        gap: 0 80px;
+    }
+
+    .categorias__lista {
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 1em;
+        column-gap: 1.5em;
+    }
+
+    .categorias__item {
+        width: 48%;
+    }
+
+    .eventos__lista {
+        display: flex;
+        justify-content: end;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+    }
+
+    .agenda__lista {
+        justify-content: end;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        column-gap: 1.5em;
+        row-gap: 1em;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .menu {
+        gap: 0 105px;
+        flex-wrap: nowrap;
+    }
+
+    .menu__item:nth-child(1) {
+        order: 0;
+    }
+
+    .menu__item:nth-child(2) {
+        order: 3;
+    }
+
+    .menu__item:nth-child(3) {
+        order: 4;
+    }
+
+    .menu__item:nth-child(4) {
+        order: 5;
+    }
+}
